@@ -10,7 +10,8 @@ To reduce computaional cost and expedite the pricing process, we tended to build
 We trained our feedforward neural network under different combinations of:
 - layers
 - neurons
-- activation functions \
+- activation functions 
+
 in both local machine (12 cores) and Google cloud Virtual Machines (96 cores).
 
 It turns out that the architecture with 2 layers of 20 neurons and relu & elu activation functions yields the best result after training 500,000 sample data, with an out-sample R-Square of 98.09%.\
