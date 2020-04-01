@@ -13,7 +13,7 @@ We trained our feedforward neural network under different combinations of:
 - activation functions \
 in both local machine (12 cores) and Google cloud Virtual Machines (96 cores).
 
-It turns out that the architecture with 2 layers of 20 neurons and relu & elu activation functions yields the best result after training 500,000 sample data, with an out-sample $\R^2$ of 98.09%.\
+It turns out that the architecture with 2 layers of 20 neurons and relu & elu activation functions yields the best result after training 500,000 sample data, with an out-sample R-Square of 98.09%.\
 
 In order to find the best architecture, we had to run many different experiments, and for that we built a system to help us keep track. This system also allows us to apply parallel computing into both data generation and network training. This helped us a great deal as we were running thousands of experiments each using up to 500,000 samples. The entire computation time is shortened down to around three hours while it could have easily taken weeks to run without the parallel computing.
 
@@ -36,4 +36,4 @@ For different sets of data, we used the ExperimentManager system to create neura
 - Run experiments\
 Run the experiments using multi-processing.
 - Analyze\
-Evaluate the performance using $ \{𝑅^{2}} $: as the MSE is already close enough to 0, we want to have the goodness of fit as high as possible.
+Evaluate the performance using R-Sqaure: as the MSE is already close enough to 0, we want to have the goodness of fit as high as possible.
