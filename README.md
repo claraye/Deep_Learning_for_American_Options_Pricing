@@ -29,7 +29,7 @@ And include the right path to the code dir and files.
    - GenerateData_outputs.ipynb: \
    Implement Juzhong/Whaley approximation method to generate American Option prices as labels.\
    We built a system, i.e. DataSetManager to manage 24 combinations of data generating options:\
-   ![Sample DataSetManager](https://github.com/claraye/Deep_Learning_for_American_Options_Pricing/sample_DataSetManager.png)
+   ![Sample DataSetManager](https://github.com/claraye/Deep_Learning_for_American_Options_Pricing/blob/master/DataSetManager_sample.png)
 
 - Add experiments\
 For different sets of data, we used the ExperimentManager system to create neural networks with different combinations of layers & neurons & activation functions, and choose the best architecture.
